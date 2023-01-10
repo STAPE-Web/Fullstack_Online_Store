@@ -1,0 +1,102 @@
+.DropDown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.DropDown .Outline {
+    width: fit-content;
+    padding: 0 25px;
+    height: 50px;
+    border: 2px solid #A3A2FF;
+    border-radius: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #A3A2FF;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.DropDown .Solid {
+    width: fit-content;
+    padding: 0 25px;
+    height: 50px;
+    background: #A3A2FF;
+    border-radius: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.DropDown .icon {
+    width: 24px;
+    height: 24px;
+    transition: 0.5s;
+}
+
+.DropDown .iconOpen {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.List {
+    width: 200px;
+    border-radius: 20px;
+    background: #F0F0F0;
+    position: absolute;
+    margin-top: 55px;
+    border: 2px solid #A3A2FF;
+    padding: 15px 0;
+}
+
+.List .Item {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1E1E1E;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.List .Item:hover {
+    background: rgba(163, 161, 255, 0.3);
+    color: #fff;
+}
+
+.List .activeItem {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #A3A2FF;
+}
+
+@media screen and (max-width: 600px) {
+    .DropDown {
+        width: 100%;
+    }
+
+    .DropDown .Solid,
+    .DropDown .Outline {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

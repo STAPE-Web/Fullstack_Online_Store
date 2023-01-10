@@ -1,0 +1,81 @@
+.SignIn {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+    min-height: calc(100vh - 75px);
+    padding: 0 30px;
+}
+
+.SignIn .Image {
+    width: 587px;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.Form h1 {
+    text-align: center;
+    color: #A3A1FF;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.Form p {
+    text-align: center;
+    color: #1E1E1E;
+    font-weight: 700;
+}
+
+.Form p a {
+    color: #A3A1FF;
+    transition: 0.5s;
+}
+
+.Form p a:hover {
+    opacity: 50%;
+}
+
+.Error {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFA1A1 !important;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 1100px) {
+    .SignIn {
+        gap: 0px;
+    }
+
+    .SignIn .Image {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .SignIn {
+        flex-direction: column;
+    }
+
+    .SignIn .Image {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .SignIn {
+        padding: 0 15px;
+    }
+
+    .Form {
+        width: 100%;
+    }
+}

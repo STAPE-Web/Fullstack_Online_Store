@@ -1,0 +1,64 @@
+.Cart {
+    padding: 40px 30px;
+}
+
+.Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.Top .CheckOut {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.Top .CheckOut h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1E1E1E;
+}
+
+.Top .CheckOut h2 span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #A3A1FF;
+}
+
+.Catalog {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.Empty {
+    color: #A3A1FF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1300px) {
+    .Catalog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Catalog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Top {
+        flex-direction: column;
+    }
+}

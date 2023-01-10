@@ -1,0 +1,299 @@
+.Item {
+    padding: 0 30px 100px 30px;
+}
+
+.Main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.Main .MainImage {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+}
+
+.Main .MainImageNull {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+}
+
+.Cover {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #A3A1FF 0%, #c3c1fb 50%, #d7d7f7 60%, #d7d7f7 61%, #c3c1fb 70%, #A3A1FF 100%);
+    background-size: 200%;
+    background-position: 100% 0;
+    border-radius: 100%;
+    animation: waves 2s linear infinite;
+    transform: rotate(30deg);
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Info .Top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Info .Top .Title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Info .Top .Title h1 {
+    color: #A3A1FF;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.Info .Top .Gallery {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Info .Top .Gallery img {
+    width: 125px;
+    height: 125px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Info .Top .Gallery img:hover {
+    box-shadow: 0 0 30px #A3A1FF;
+}
+
+.Info .Bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Info .Bottom .Specifications {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Info .Bottom .Specifications h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1E1E1E;
+}
+
+.Info .Bottom .Specifications ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1E1E1E;
+    list-style: none;
+}
+
+.Info .Bottom .Specifications ul li span {
+    font-weight: 700;
+    font-size: 16px;
+    color: #A3A1FF;
+}
+
+.Info .Bottom .ButtonAndPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.Info .Bottom .ButtonAndPrice .icon {
+    width: 24px;
+    height: 24px;
+
+}
+
+.Info .Bottom .ButtonAndPrice h2 {
+    font-size: 32px;
+    width: 30%;
+    color: #1E1E1E;
+    font-weight: 700;
+    user-select: none;
+}
+
+.Info .Bottom .ButtonAndPrice h2 span {
+    color: #A3A1FF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.ExtendedInfo {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.ExtendedInfo h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #A3A1FF;
+}
+
+.ExtendedInfo p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1E1E1E;
+}
+
+.ExtendedInfo p span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #A3A1FF;
+}
+
+.ExtendedInfo div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ExtendedInfo div h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #A3A1FF;
+}
+
+.NutritionalValue {
+    display: flex;
+    flex-direction: column;
+    gap: 5px !important;
+}
+
+.ExtendedInfo ul {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1E1E1E;
+    margin-left: 20px;
+}
+
+.amountButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #A3A1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.amountButton .icon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.amountButton:hover {
+    opacity: 50%;
+}
+
+.Counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Counter .Amount {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1E1E1E;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .Main .MainImage,
+    .Main .MainImageNull {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .Main .MainImage,
+    .Main .MainImageNull {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Main {
+        flex-direction: column-reverse;
+    }
+
+    .Main .MainImage,
+    .Main .MainImageNull {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .Main .MainImage,
+    .Main .MainImageNull {
+        width: 300px;
+        height: 300px;
+    }
+
+    .Item {
+        padding: 0 15px 100px 15px;
+    }
+
+    .Info .Top .Gallery {
+        flex-wrap: wrap;
+    }
+
+    .Info .Bottom .ButtonAndPrice {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Info .Top .Title h1 {
+        font-size: 28px;
+    }
+
+    .Info .Top .Gallery {
+        flex-direction: column;
+    }
+
+    .Info .Top .Gallery img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .Main .MainImage,
+    .Main .MainImageNull {
+        width: 100%;
+    }
+}
+
+
+@keyframes waves {
+    100% {
+        background-position: -100% 0;
+    }
+}

@@ -1,0 +1,56 @@
+.Order {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.Items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: calc(100vh - 135px);
+    overflow-y: scroll;
+    gap: 30px;
+    width: 100%;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.Form h1 {
+    text-align: center;
+    color: #A3A1FF;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.Form h1 span {
+    color: #1E1E1E;
+}
+
+.Empty {
+    color: #A3A1FF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+    .Items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Order {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Order {
+        flex-direction: column-reverse;
+    }
+}

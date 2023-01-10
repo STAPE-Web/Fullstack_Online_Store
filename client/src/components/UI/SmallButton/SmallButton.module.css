@@ -1,0 +1,19 @@
+.Button {
+    height: 60px;
+    padding: 0 60px;
+    border-radius: 30px;
+    background: #A3A1FF;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+
+.Button:hover {
+    box-shadow: 0 0 30px #A3A1FF;
+}

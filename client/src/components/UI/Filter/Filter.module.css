@@ -1,0 +1,34 @@
+.Filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Reset {
+    width: 50px;
+    height: 50px;
+    background: #A3A1FF;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.Reset .icon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.Reset:hover {
+    box-shadow: 0 0 30px #A3A1FF;
+}
+
+@media screen and (max-width: 600px) {
+    .Filter {
+        flex-direction: column;
+        width: 100%;
+    }
+}

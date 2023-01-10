@@ -1,0 +1,81 @@
+.SignUp {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+    min-height: calc(100vh - 75px);
+    padding: 0 30px;
+}
+
+.SignUp .Image {
+    width: 587px;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.Form h1 {
+    text-align: center;
+    color: #A3A1FF;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.Form p {
+    text-align: center;
+    color: #1E1E1E;
+    font-weight: 700;
+}
+
+.Form p a {
+    color: #A3A1FF;
+    transition: 0.5s;
+}
+
+.Form p a:hover {
+    opacity: 50%;
+}
+
+.Error {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFA1A1 !important;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 1100px) {
+    .SignUp {
+        gap: 0px;
+    }
+
+    .SignUp .Image {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .SignUp {
+        flex-direction: column;
+    }
+
+    .SignUp .Image {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .SignUp {
+        padding: 50px 15px;
+    }
+
+    .Form {
+        width: 100%;
+    }
+}

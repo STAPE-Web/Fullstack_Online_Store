@@ -1,0 +1,84 @@
+.Item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Item:hover .Image {
+    box-shadow: 0 0 30px rgba(163, 161, 255, 0.5);
+}
+
+.Image {
+    width: 100%;
+    height: 300px;
+    background: #EDECEC;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.Info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.Info h2 {
+    font-size: 22px;
+    color: #1E1E1E;
+    font-weight: 700;
+}
+
+.Info p {
+    font-size: 32px;
+    color: #A3A1FF;
+    font-weight: 700;
+}
+
+.Data {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background: #A3A1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.Remove {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #FFA1A1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.Remove:hover {
+    opacity: 50%;
+}
+
+.Remove .icon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
